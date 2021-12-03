@@ -330,4 +330,31 @@ body {
     opacity: 0;
 }
 
+.statistics{
+    background-color: #95e1d3;
+}
 
+.stat{
+    display: flex;
+}
+
+.stat_item{
+    flex: 1 1 0;
+    padding: 53.75px 0 78.75px;
+
+    border-left: solid 1px #b5eae0;
+    text-align: center;
+    color: #fff;
+}
+.stat_item:last-child{
+    border-right: solid 1px #b5eae0;
+}
+
+.stat_count{
+    font-size: 72px;
+    font-weight: 700;
+}
+.stat_text{
+    text-transform: uppercase;
+}
+    
