@@ -253,7 +253,7 @@ body {
     display: block;
     width: 60px;
     height: 3px;
-    margin: 30px auto;
+    margin: 30px auto 45px;
 
     background-color: #f38181;
 }
@@ -261,6 +261,7 @@ body {
 .section_text{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    margin: 45px 0 100px;
     color: #999;
     font-weight:normal;
 }
