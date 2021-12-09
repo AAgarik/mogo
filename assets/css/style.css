@@ -434,3 +434,173 @@ hr{
     z-index: 1;
     width: 234px;
 }
+
+/* we do */
+
+.wedo{
+    display: flex;
+}
+
+.wedo_item{
+    width: 50%;
+}
+.wedo_item img{
+    max-width: 570px;
+}
+
+/* accordion */
+
+.accordion_item{
+    margin-bottom: 10px;
+    border: solid 1px #e5e5e5;
+}
+
+.accordion_item.active
+.accordion_content{
+    display: block;
+}
+
+.accordion_item.active
+.accordion_header::after{
+    top: 57%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.accordion_item.active
+.accordion_header{
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.accordion_header{
+    padding: 18.3px 20px 18.3px 60px;
+    position: relative;
+
+    border-bottom: solid 1px transparent;
+    cursor: pointer;
+}
+
+.accordion_header::after{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+
+    position: absolute;
+    top: 43%;
+    right: 20px;
+    z-index: 1;
+
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion_icon{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    z-index: 1;
+
+    transform: translateY(-50%);
+}
+
+.accordion_content{
+    padding: 15px 20px;
+    display: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.accordion_title{
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* reviews */
+
+.section--grey{
+    background-color: #f8f8f8;
+    padding: 70px 0 60px;
+}
+
+.reviews{
+    padding: 0 110px ;
+    position: relative;
+}
+
+.reviews_item{
+    padding-left: 205px;
+    position: relative;
+}
+
+
+.reviews_photo{
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews_text{
+    margin-bottom: 7px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    color: #999;
+}
+
+.reviews_author{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 24px;
+    color: #333;
+}
+
+.reviews_author:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    margin-right: 10px;
+
+    background-color: #f38181;
+}
+
+.reviews_btn{
+    font-size: 0;
+    color: transparent;
+
+    position: absolute;
+    top: 42%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.reviews_btn:after{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+}
+
+.reviews_btn--prev{
+    left: 0;
+    transform: rotate(-135deg);
+}
+.reviews_btn--next{
+    right: 0;
+    transform: rotate(45deg);
+}
